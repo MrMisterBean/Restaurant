@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap');
+
+@layer components {
+  .nav-tab {
+    @apply px-2 uppercase transition-all border-b border-gray-400 hover:border-gray-600 hover:px-6;
+  }
+  .desktop-nav-tab {
+    @apply px-2 uppercase;
+  }
+}

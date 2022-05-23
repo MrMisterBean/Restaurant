@@ -1,9 +1,4 @@
-import { useState } from "react"
-
-import Hamburger from "./hamburger"
-import Nav from "./nav"
-
-
+import Nav from "./Navbar"
 
 export default function Home() {
   return (
