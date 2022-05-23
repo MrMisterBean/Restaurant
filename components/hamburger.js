@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Hamburger() {
   return (
     <div className="flex lg:hidden">
-      <Link href="/accordian" >
+      <Link href="/navigation/NavPage" >
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"

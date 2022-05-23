@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Hamburger from "../components/hamburger"
+import Hamburger from "./hamburger"
 
 export default function Navbar() {
   return (
@@ -9,7 +9,7 @@ export default function Navbar() {
           <h3 className="text-4xl font-medium font-fancy-italic">L'amour Toujours</h3>
         </div>
         <ul className="hidden space-x-8 lg:flex">
-          <Link href="/home">
+          <Link href="/main/Home">
             <li className="desktop-nav-tab">
               <a>Home</a>
             </li>
