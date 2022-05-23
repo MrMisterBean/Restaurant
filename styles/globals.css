@@ -12,10 +12,4 @@
   .desktop-nav-tab {
     @apply px-2 uppercase;
   }
-  .item-image {
-    @apply p-2;
-  }
-  .item-description {
-    @apply p-2;
-  }
 }
