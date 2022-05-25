@@ -69,10 +69,14 @@ export default function Menu() {
           menu.map((item, i) => {
             return (
               <div className="relative">
-                <img className="border-b-4 border-black" onClick={() => toggleDescription(i)} src={item.image} alt={item.name} width={500} height={500} />
-                <div className="absolute top-0 left-0 p-2 m-2 bg-white border-4 border-black font-fancy "> {item.name} </div>
-                <p className={`transition-all font-fancy ${item.isOpen ? '' : 'hidden'}`}>
+                <img className={`border-b-4 border-black ${item.isOpen ? "brightness-50" : ""}`} onClick={() => toggleDescription(i)} src={item.image} alt={item.name} width={500} height={500} />
+                {/* <Image className="border-b-4 border-black" onClick={() => toggleDescription(i)} src={item.image} alt={item.name} width={500} height={500} /> */}
+                <div className="absolute p-2 bg-white border-4 border-black top-2 left-2 font-fancy "> {item.name} </div>
+                <p className={`transition-all bg-white border-4 border-black text-black p-2 absolute bottom-2 left-2 font-fancy ${item.isOpen ? '' : 'hidden'}`}>
                   {item.description}
+                </p>
+                <p className={`transition-all bg-white border-4 border-black border-t-0 text-black p-2 absolute top-14 left-2 font-fancy ${item.isOpen ? '' : 'hidden'}`}>
+                  $ {item.price}
                 </p>
               </div>
             )
