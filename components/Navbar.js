@@ -1,11 +1,16 @@
 import Link from 'next/link'
+import Divider from './Divider'
 import Hamburger from "./hamburger"
+import Image from "next/image"
+// import chef from '../public/images/chef.png'
 
 export default function Navbar() {
   return (
-    <div >
-      <nav className="container flex justify-between px-4 py-8 mx-auto border-b-2 border-black">
-        <div>
+    <div>
+      <nav className="container flex justify-between px-4 pt-8 pb-2 mx-auto ">
+        <div className='flex'>
+          <Image src='/logo.png' width={40} height={40} />
+          {/* <img src="../public/images/logo.jpg" width={200} height={200} /> */}
           <h3 className="text-4xl font-medium font-fancy-italic">L'amour Toujours</h3>
         </div>
         <ul className="hidden space-x-8 lg:flex">
@@ -32,6 +37,7 @@ export default function Navbar() {
         </ul>
         <Hamburger />
       </nav>
+      <Divider />
     </div>
   )
 }

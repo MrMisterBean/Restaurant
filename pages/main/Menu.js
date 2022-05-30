@@ -51,8 +51,6 @@ export default function Menu() {
     const newMenu = [...menu]
     newMenu[i].isOpen = !newMenu[i].isOpen
     setMenu(newMenu)
-    console.log(menu)
-    // console.log(i)
   }
 
   return (
